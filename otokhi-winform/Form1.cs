@@ -33,5 +33,19 @@ namespace otokhi_winform
             var result = await apiService.GetAsync($"api/sites/{_token}/start/piisiit");
             this.listBox1.Items.Add(result);
         }
+
+        private async void btnStopOtokhi_Click(object sender, EventArgs e)
+        {
+            var apiService = new ApiService(_url);
+            var result = await apiService.GetAsync($"api/sites/{_token}/stop/otokhi");
+            this.listBox2.Items.Add(result);
+        }
+
+        private async void btnStartOtokhi_Click(object sender, EventArgs e)
+        {
+            var apiService = new ApiService(_url);
+            var result = await apiService.GetAsync($"api/sites/{_token}/start/otokhi");
+            this.listBox2.Items.Add(result);
+        }
     }
 }
