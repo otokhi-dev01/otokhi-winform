@@ -11,11 +11,11 @@ using System.Windows.Forms;
 
 namespace otokhi_winform
 {
-    public partial class Form1 : Form
+    public partial class frmSiteServices : Form
     {
         private readonly string _url = "http://iis-remote.otokhi.com";
         private readonly string _token = "0fbe299ca1409b9dba8c5cbdbbb879b5ab5196c3"; // Replace with a secure token
-        public Form1()
+        public frmSiteServices()
         {
             InitializeComponent();
         }
